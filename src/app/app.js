@@ -16,13 +16,13 @@
 			'api': settings.api
 		});
 
-	    // Load the translations
-	    // translations variable comes from language file
-	    $translateProvider.useStaticFilesLoader({
-	        prefix: settings.translations.prefix,	// url
-	        suffix: settings.translations.suffix	// .json
-	    });
-	    $translateProvider.preferredLanguage(settings.translations.language);	// en_GB
+		// Load the translations
+		// translations variable comes from language file
+		$translateProvider.useStaticFilesLoader({
+			prefix: settings.translations.prefix, // url
+			suffix: settings.translations.suffix // .json
+		});
+		$translateProvider.preferredLanguage(settings.translations.language); // en_GB
 
 		// HTML5 Mode
 		// https://docs.angularjs.org/guide/$location
