@@ -1,0 +1,43 @@
+/**
+ * Grunt configuration
+ */
+'use strict';
+
+var pkg = require('../package');
+var env = process.env.ENV || 'development';
+
+module.exports = {
+
+	// A banner for distributed files (name, version, license, date)
+	banner: '/*! ' + pkg.name + ' - v' + pkg.version + ' - MIT License - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+	env: env,
+	module: 'app',
+	path: {
+		build: 'build',
+		buildAssets: 'build/assets',
+		buildAssetsCss: 'build/assets/css',
+		buildAssetsJs: 'build/assets/js',
+		buildAssetsJsLibs: 'build/assets/js/libs',
+		dist: 'dist',
+		distAssets: 'dist/assets',
+		distAssetsCss: 'dist/assets/css',
+		distAssetsJs: 'dist/assets/js',
+		distAssetsJsLibs: 'dist/assets/js/libs',
+		src: 'src',
+		srcApp: 'src/app',
+		srcSass: 'src/sass',
+		srcSprites: 'src/sprites',
+		temp: 'temp',
+		test: 'test',
+		testLibs: 'test/libs',
+		webAssets: '/assets',
+		webAssetsCss: '/assets/css',
+		webAssetsJs: '/assets/js',
+		webAssetsJsLibs: '/assets/js/libs'
+	},
+	rsync: {
+		host: '',
+		path: ''
+	}
+
+};

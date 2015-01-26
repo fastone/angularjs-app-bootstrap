@@ -1,0 +1,8 @@
+{
+	"api": "",
+	"translations": {
+		"prefix": "/languages/",
+		"suffix": ".json",
+		"language": "en_GB"
+	}
+}

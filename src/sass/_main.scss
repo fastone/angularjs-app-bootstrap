@@ -1,0 +1,14 @@
+// We use compass in this project
+@import 'compass';
+
+// Import all default variables
+@import 'base/variables';
+
+// We need the reset to have a blank starting point
+@import "base/reset";
+
+// We use the same fonts through the application
+@import "base/fonts";
+
+// Declare all the basic structural styling
+@import "base/scaffolding";

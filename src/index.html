@@ -1,0 +1,27 @@
+<!doctype html>
+<html id="ng:app" data-ng-app="app">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title data-ng-bind="title"></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="Cache-Control" content="no-transform">
+		<style>
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+		* { margin: 0; padding: 0; }
+		</style>		
+        <!-- fileblock:css stylesheets -->
+        <!-- endfileblock -->
+        <!-- fileblock:js libs -->
+        <!-- endfileblock -->
+        <!-- fileblock:js app -->
+        <!-- endfileblock -->
+    </head>
+    <body translate-cloak>
+		<div class="container" id="maincontent">
+	        <ng:view></ng:view>
+		</div>
+    </body>
+</html>
