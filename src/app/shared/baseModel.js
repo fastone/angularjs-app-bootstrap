@@ -11,22 +11,19 @@
 
 	function BaseModel($resource) {
 		return function(route, params, actions) {
-			if (actions.method !== undefined && actions.method !== 'JSONP') {
-				return $resource(route, params, {
-					get: angular.extend({
-						cache: false
-					}, actions)
-				});
-			} else {
-				return $resource(route, angular.extend({
-					callback: 'JSON_CALLBACK'
-				}, params), {
-					get: angular.extend({
-						method: 'JSONP',
-						cache: false
-					}, actions)
-				});
-			}
+			return $resource(route, params, {
+				get: angular.extend({
+					cache: false,
+					method: 'GET'
+				}, actions),
+				jsonp: angular.extend({
+					cache: false,
+					method: 'JSONP',
+					params: {
+						callback: 'JSON_CALLBACK'
+					}
+				}, actions),
+			})
 		};
 	}
 	BaseModel.$inject = ['$resource'];

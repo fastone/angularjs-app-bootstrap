@@ -8,6 +8,20 @@
 
 		function activate() {
 
+            ExampleModel.jsonp({
+                parameter1: 1,
+                parameter2: 2
+            }).$promise.then(function(data) {
+				console.dir(data);
+			});
+
+            ExampleModel.get({
+                parameter1: 1,
+                parameter2: 2
+            }).$promise.then(function(data) {
+				console.dir(data);
+			});
+
 		}
 
 		activate();
