@@ -33,7 +33,8 @@ module.exports = {
 		webAssets: '/assets',
 		webAssetsCss: '/assets/css',
 		webAssetsJs: '/assets/js',
-		webAssetsJsLibs: '/assets/js/libs'
+		webAssetsJsLibs: '/assets/js/libs',
+		languages: 'languages'
 	},
 	rsync: {
 		host: '',
